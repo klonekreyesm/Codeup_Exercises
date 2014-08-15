@@ -7,15 +7,15 @@ $students = array(
     array('name' => 'Marissa Mayer', 'age' => 38)
 );
      
- //echo $students[1]['name'];    //echos one string with one name
+ //echo $students[1]['name'];    								//echos one string with one name
 
 
 
 
 foreach ($students as $student) {
-	//echo $student['name']. "\n";//echos all names 
+//echo $student['name']. "\n";									//echos all names
 	
-	if (is_array($student)){
+	if (is_array($student)){									//if statement to check if it is array
 
 	foreach($student as $key => $value){
 		echo "Student's " .ucfirst($key) . " is $value\n";	}   //ucfirst capitalizes first character 
@@ -29,7 +29,7 @@ foreach ($students as $student) {
 
 
 
-    //echo "{$student['name']} is {$student['age']} years old.\n";
+ //echo "{$student['name']} is {$student['age']} years old.\n";
 }
 
 
