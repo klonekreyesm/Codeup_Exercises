@@ -1,74 +1,88 @@
 <?php
 
-        
+        //define addition function
         function add($a,$b){	
-			if (is_numeric($a) && is_numeric($b)) {					//define addition function
-			echo $a + $b. PHP_EOL;
-			usleep (500000);
-			}else {
-        	echo "ERROR: Both arguments must be numbers".PHP_EOL;
+			if (is_numeric($a) && is_numeric($b)) {					
+				return $a + $b. PHP_EOL;
+				usleep (500000);
+			}
+			else {
+        		echo "ERROR: Both arguments must be of numberic value".PHP_EOL;
     		}
 		}
-		function subtract($a,$b){									//define subtraction function
+		//define subtraction function
+		function subtract($a,$b){									
 			if (is_numeric($a) && is_numeric($b)){									
-			echo $a - $b. PHP_EOL;
-			usleep (500000);
-			}else {
-        	echo "ERROR: Both arguments must be numbers".PHP_EOL;
+				return $a - $b. PHP_EOL;
+				usleep (500000);
+			}
+			else{
+        		echo "ERROR: Both arguments must be of numeric value".PHP_EOL;
     		}
 		}
-		function multiply($a,$b){									//define multiplication function
+		//define multiplication function
+		function multiply($a,$b){									
 			if(is_numeric($a) && is_numeric($b)){
-			echo $a * $b. PHP_EOL;
-			usleep (500000);
-			}else{
-			echo "ERROR: Both arguments must be numbers".PHP_EOL;
+				return $a * $b. PHP_EOL;
+				usleep (500000);
+			}
+			else{
+				echo "ERROR: Both arguments must be of numeric value".PHP_EOL;
 			}
 		}
-		function divide ($a,$b){									//define division function
+		//define division function
+		function divide ($a,$b){									
 			if(is_numeric($a) && is_numeric($b)){
 				if($b == 0){
-					echo "ERROR: Not divisible by 0.".PHP_EOL;
-				}else{
-					echo $a / $b. PHP_EOL;
+					echo "ERROR: FALSE".PHP_EOL;
+				}
+				else{
+					return $a / $b. PHP_EOL;
 					usleep (500000);
 				}
-			}else{
-			echo "ERROR: Both arguments must be numbers".PHP_EOL;
+			}
+			else{
+				echo "ERROR: Both arguments must be of numeric value".PHP_EOL;
 			}
 		}
-	 	function remainder($a,$b){									//define modulus function
+		//define modulus function
+	 	function remainder($a,$b){									
 	 		if (is_numeric($a) && is_numeric($b)){
 	 			if($b == 0){
-					echo "ERROR: Not divisible by 0";				
-				}else{
-					echo $a % $b. PHP_EOL;
+					echo "ERROR: FALSE".PHP_EOL;			
+				}
+				else{
+					return $a % $b. PHP_EOL;
 					usleep (500000);
 				}
-			}else{
-			echo "ERROR: Both arguments must be numbers".PHP_EOL;
 			}
-
+			else{
+				echo "ERROR: Both arguments must be of numeric value".PHP_EOL;
+			}
 		}
+	//test code by executing 
+	echo add(0,1);												
+	echo subtract(3,1);					
+	echo $add_and_then_subtract;
 
 
 
+	echo multiply(1,3);					
+	echo divide(8,2);
+	echo remainder(40,3);
+	echo add('Low',0);
+	echo subtract ('Low','test');
+	echo remainder (12,'test');
+	echo divide(12,0);
+	echo remainder (3,0);
 
-	add(2,3);									//test functions
-	subtract(3,1);
-	multiply(2,3);
-	divide(2,3);
-	remainder(10,3);
-	add('Low',0);
-	subtract ('Low','test');
-	remainder (12,'test');
-	divide(12,0);
-	remainder (3,0);
+	
+
+
+
 
 
 	
-		
-
 
 ?>
 
