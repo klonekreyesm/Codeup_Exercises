@@ -5,8 +5,8 @@
 	$test = 5;
 
 	while ($test <= 15){
-		echo $test . "\n";
-		$test++ ;
+		echo $test . PHP_EOL;
+		$test++;
 		usleep(50000);
 	}
 
