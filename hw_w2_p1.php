@@ -25,10 +25,12 @@ $month = ["January",
 		  "November",
 		  "December"];
 
-		 
+	// given the variable $year	 
+		$year = 2014; 
+		
 	//create a daysOfMonth function to pass each month through
 	//changing the value of $year should check for leap year
-	function daysOfMonth($monthNum, $year=2016)
+	function daysOfMonth($monthNum, $year)
 	{
 		$monthNum++;
 		// calculate number of days in given month and year
@@ -37,13 +39,16 @@ $month = ["January",
 	} 
 
 
+	echo "Number of Days in Each Month for {$year}". PHP_EOL."----------------------------------------".PHP_EOL;
+	
 
 	//created loop to pass each month thru the daysOfMonth function
 	foreach ($month as $monthNum => $monthName)
 	{
 		if ($monthNum <=12)
-		{
-			echo $monthName. " has " . daysOfMonth($monthNum)." days in it.". PHP_EOL;
+		{	
+
+			echo $monthName. " has " . daysOfMonth($monthNum, $year)." days.". PHP_EOL;
  
 		}
 	}
