@@ -3,13 +3,8 @@
     // Create a function called daysOfMonth.
     // Pass a month e.g. 'January' to the function. 
     // Use other months to test your function.
-    // Expected output:
-
-        // January has 31 days in it.
-        // February has 28 days in it. (Unless it is leap year, then return 29)
-        //     and so on...
-
-//set array of month names for a given year
+   
+    //set array of month names for a given year
     $month = ['January',
               'February',
               'March',
