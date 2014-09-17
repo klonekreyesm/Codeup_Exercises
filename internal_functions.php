@@ -1,18 +1,20 @@
 <?php
 
-
 	
 	$nothing = NULL;
 	$something = '';
 	$array = array(1,2,3);
 
 function check($variable){
-		if (isset($variable)){
+		//are you a set of data?
+		if (isset($variable)){	
 		return "The variable is SET".PHP_EOL; 
-		}elseif (empty($variable)){
+		}	
+		//are you empty?
+		elseif (empty($variable)){					
 		return "The variable is empty".PHP_EOL;
 		}
-	}
+}
 
 	
 	echo check($nothing);
@@ -23,7 +25,6 @@ function check($variable){
 	var_dump ($serialize_array);
 	var_dump ($array);
 	
-
 
 
 
