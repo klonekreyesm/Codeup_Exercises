@@ -1,6 +1,13 @@
-##This is a ReadMe file.
+##Codeup Web Exercises
 
-###These are PHP exercises done in the CodeUp cohort :  <strong>Carlsbad</strong>!
+This repository include exercises initiated within 12 weeks in the Carlsbad cohort. 
 
+These exercises were created with Linux/Apache/MySQL/PHP.
 
-meow.
+Most notable:
+
+- fizzbuzz.php
+- hw_w2_p1.php
+
+##Codeup Website
+<a href="www.codeup.com">Codeup</a>
