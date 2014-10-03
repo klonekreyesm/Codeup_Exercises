@@ -1,6 +1,6 @@
 ##Codeup Web Exercises
 
-This repository include exercises initiated within 12 weeks in the Carlsbad cohort. 
+This repository includes exercises initiated within 12 weeks in the Carlsbad cohort. 
 
 These exercises were created with Linux/Apache/MySQL/PHP.
 
